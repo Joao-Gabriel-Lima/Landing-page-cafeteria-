@@ -21,7 +21,6 @@ header {
   grid-template-columns: 1fr 1fr;
   padding: 40px;
   color: var(--secondary-color);
-  
 }
 
 header ul {
@@ -61,13 +60,11 @@ main {
   padding: 0;
   box-sizing: border-box;
   border: 10px solid var(--primary-color);
-  
 }
 
 main img {
   width: 30%;
   height: auto;
-  
 }
 #home h2 {
   font-size: 2.5rem;
@@ -101,7 +98,6 @@ main img {
   margin-right: auto;
   border-bottom: #4b2a12;
   border-bottom: 10px solid var(--primary-color);
-  
 }
 
 #home {
@@ -146,6 +142,7 @@ main img {
   margin: auto;
   width: 100%;
   border-bottom: 5px solid var(--primary-color);
+  
 }
 
 #menu h2 {
@@ -159,14 +156,40 @@ main img {
   padding: 10px;
   box-sizing: border-box;
   box-shadow: #333;
+  border-radius: 20px;
 }
 
-#menu img{
-    border: 10px solid #4b2a12;
-    height:500px;
-    object-fit: c;
+#menu p{
+    font-size: 1.2rem;
+  color: var(--text-color);
+  text-align: center;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-#botaoMenu{
-    width: 100px;
+#menu img {
+  border: 10px solid #4b2a12;
+  height: 500px;
+}
+
+#botaoMenu {
+  border: 10px solid #4b2a12;
+  display: inline-flex;
+  width: 400px;
+  font-size:x-large;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+#menu-itens{
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
 }
