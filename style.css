@@ -7,11 +7,15 @@
 }
 
 :root {
-  --primary-color: #4b2a12;
+  --primary-color: #291608;
   --secondary-color: #e9ceac;
   --accent-color: #c0a080;
   --text-color: #333;
   --background-color: #f5f5f5;
+}
+
+header h1 {
+  font-size: 40px;
 }
 
 header {
@@ -21,6 +25,8 @@ header {
   grid-template-columns: 1fr 1fr;
   padding: 40px;
   color: var(--secondary-color);
+  justify-content: center;
+  align-items: center;
 }
 
 header ul {
@@ -66,6 +72,7 @@ main img {
   width: 30%;
   height: auto;
 }
+
 #home h2 {
   font-size: 2.5rem;
   color: var(--primary-color);
@@ -76,6 +83,7 @@ main img {
   width: fit-content;
   padding: 10px;
   border-radius: 20px;
+  box-shadow: 0 0 25px rgba(252, 252, 252, 0.8);
 }
 
 #home p {
@@ -89,19 +97,15 @@ main img {
   margin-right: auto;
   padding: 10px;
   border-radius: 10px;
-}
-
-#home img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-right: auto;
-  border-bottom: #4b2a12;
-  border-bottom: 10px solid var(--primary-color);
+  box-shadow: 0 0 25px rgba(252, 252, 252, 0.8);
 }
 
 #home {
-  background-color: var(--accent-color);
+  background-image: url(imagens/cafe-fundo.avif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   margin: auto;
   width: 100%;
   border-bottom: 10px solid var(--primary-color);
@@ -124,6 +128,7 @@ main img {
   width: fit-content;
   padding: 10px;
   border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
 }
 
 #about p {
@@ -142,7 +147,6 @@ main img {
   margin: auto;
   width: 100%;
   border-bottom: 5px solid var(--primary-color);
-  
 }
 
 #menu h2 {
@@ -157,10 +161,11 @@ main img {
   box-sizing: border-box;
   box-shadow: #333;
   border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
 }
 
-#menu p{
-    font-size: 1.2rem;
+#menu p {
+  font-size: 1.2rem;
   color: var(--text-color);
   text-align: center;
   width: fit-content;
@@ -179,17 +184,73 @@ main img {
   border: 10px solid #4b2a12;
   display: inline-flex;
   width: 400px;
-  font-size:x-large;
+  font-size: x-large;
   color: var(--secondary-color);
   background-color: var(--primary-color);
   justify-content: center;
   align-items: center;
-  
-  
+  text-shadow: 0 0 25px rgba(250, 246, 246, 0.8);
 }
 
-#menu-itens{
-    display: flex;
-    flex-direction: row;
-    gap: 3px;
+#menu-itens {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+}
+
+#contact {
+  background-color: var(--accent-color);
+  margin: auto;
+  width: 100%;
+  border-bottom: 5px solid var(--primary-color);
+}
+
+#contact h2{
+    font-size: 2.5rem;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: #333;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+}
+
+footer{
+    font-size: 1.2rem;
+  color: var(--text-color);
+  text-align: center;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+footer ul{
+    list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+address{
+    
+}
+
+address li a {
+    display: inline-flex;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    background-color: #4b2a12;
+    color: var(--secondary-color);
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
 }
