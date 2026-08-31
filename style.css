@@ -50,6 +50,14 @@ header ul a {
   color: var(--secondary-color);
   font-size: 1.2rem;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 20px;
+}
+
+header ul a:hover{
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    color: var(--primary-color);
 }
 
 body {
@@ -60,9 +68,7 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  padding: 40px;
   gap: 0px;
-  padding-left: 20px;
   padding: 0;
   box-sizing: border-box;
   border: 10px solid var(--primary-color);
@@ -159,7 +165,6 @@ main img {
   width: fit-content;
   padding: 10px;
   box-sizing: border-box;
-  box-shadow: #333;
   border-radius: 20px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
 }
@@ -177,13 +182,15 @@ main img {
 
 #menu img {
   border: 10px solid #4b2a12;
-  height: 500px;
+  width:30%;
+  height: auto;
+  max-width: 400px;
 }
-
 #botaoMenu {
   border: 10px solid #4b2a12;
   display: inline-flex;
-  width: 400px;
+  width: 30%;
+  max-width: 400px;
   font-size: x-large;
   color: var(--secondary-color);
   background-color: var(--primary-color);
@@ -196,61 +203,104 @@ main img {
   display: flex;
   flex-direction: row;
   gap: 3px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #contact {
   background-color: var(--accent-color);
   margin: auto;
   width: 100%;
-  border-bottom: 5px solid var(--primary-color);
+  
+  
 }
 
-#contact h2{
-    font-size: 2.5rem;
+#contact p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
   color: var(--primary-color);
   background-color: var(--secondary-color);
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
-  padding: 10px;
+  padding: 10px;  
   box-sizing: border-box;
-  box-shadow: #333;
   border-radius: 20px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
 }
 
-footer{
-    font-size: 1.2rem;
+footer {
+  font-size: 1.2rem;
   color: var(--text-color);
   text-align: center;
-  width: fit-content;
+  width: auto;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
-  border-radius: 5px;
+  background-color: var(--accent-color);
+  box-sizing: border-box;     
 }
 
-footer ul{
+address ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
     list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-}
-
-address{
-    
 }
 
 address li a {
-    display: inline-flex;
-    padding: 10px;
-    width: auto;
-    height: auto;
-    background-color: #4b2a12;
-    color: var(--secondary-color);
-    border-radius: 10px;
-    cursor: pointer;
-    text-decoration: none;
+  display: inline-flex;
+  padding: 10px;
+  width: auto;
+  height: auto;
+  background-color: #4b2a12;
+  color: var(--secondary-color);
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px solid var(--primary-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+address li a:hover{
+    background-color: var(--accent-color);
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+
+}
+
+@media (max-width: 768px){
+  header{
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  header h1{
+    display: flex;
+    justify-content: center;
+  }
+
+  #botaoMenu{
+    font-size: medium;
+    text-align: center;
+    
+  }
+
+  #home h2{
+    display: flex;
+    text-align: center;
+  }
+
+  address ul{
+    display: flex;
+    flex-direction: column;
+  }
 }
