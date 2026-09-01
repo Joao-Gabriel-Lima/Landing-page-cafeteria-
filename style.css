@@ -304,4 +304,8 @@ address li a:hover{
     display: flex;
     flex-direction: column;
   }
+
+  #contact p{
+    text-align: center;
+}
 }
