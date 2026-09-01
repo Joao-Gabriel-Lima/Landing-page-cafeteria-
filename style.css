@@ -244,7 +244,8 @@ footer {
   margin-right: auto;
   padding: 10px;
   background-color: var(--accent-color);
-  box-sizing: border-box;     
+  box-sizing: border-box;
+  border: 10px solid var(--primary-color);     
 }
 
 address ul{
