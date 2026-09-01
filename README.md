@@ -6,11 +6,11 @@ O projeto foi criado para praticar conceitos de desenvolvimento Front-end, traba
 
 Demonstração
 
-**[Acessar o projeto](https://joao-gabriel-lima.github.io/)**
+**[Acessar o projeto](https://joao-gabriel-lima.github.io/Landing-page-cafeteria-/)**
 
 ## Preview
 
-[Coffee House](imagens/preview.png)
+[Coffee House](imagens/Preview.png)
 
 ## Tecnologias
 
