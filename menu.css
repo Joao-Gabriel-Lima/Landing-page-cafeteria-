@@ -37,31 +37,25 @@ header h1 {
 header h1:hover {
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    border-radius: 20px;
 }
 
 header ul {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  list-style: none;
   gap: 20px;
-  padding-right: 20px;
-  padding-left: 20px;
-  color: var(--secondary-color);
+  list-style: none;
+  padding: 5px 20px;
   border: 1px solid var(--secondary-color);
   border-radius: 20px;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: 0;
 }
 
 header ul a {
   color: var(--secondary-color);
   font-size: 1.2rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
   border-radius: 20px;
 }
 
@@ -80,9 +74,7 @@ main {
   background-color: var(--accent-color);
   display: flex;
   flex-direction: column;
-  gap: 0px;
-  padding: 0;
-  box-sizing: border-box;
+  padding: 0; 
   border: 10px solid var(--primary-color);
 }
 
@@ -92,17 +84,17 @@ main img {
 }
 
 #tabela {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   border: 5px solid var(--primary-color);
   padding: 30px;
 }
-
 .border {
     border: 5px solid var(--primary-color);
     border-radius: 20px;
     padding: 20px;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 0 5%;
 }
 
 #tabela h2 {
@@ -145,7 +137,6 @@ table th[colspan="1"] {
 table th[colspan="1"]:hover {
   background-color: var(--secondary-color);
   color: var(--primary-color);
-  border-radius: 10px;
 }
 
 table td {
@@ -181,7 +172,6 @@ table td:hover {
 
 #cafe {
   background-color: var(--accent-color);
-  margin: auto;
   width: 100%;
   border-bottom: 5px solid var(--primary-color);
 }
@@ -226,7 +216,6 @@ table td:hover {
   margin-right: auto;
   width: fit-content;
   padding: 10px;
-  box-sizing: border-box;
   border-radius: 20px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
 }
@@ -249,9 +238,7 @@ table td:hover {
 }
 
 #sobremesas p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
 #sobremesas h2 {
@@ -263,7 +250,6 @@ table td:hover {
   margin-right: auto;
   width: fit-content;
   padding: 10px;  
-  box-sizing: border-box;
   border-radius: 20px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
 }
@@ -272,7 +258,6 @@ footer {
   font-size: 1.2rem;
   color: var(--text-color);
   text-align: center;
-  width: auto;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
@@ -288,9 +273,7 @@ footer {
 }
 
 #pedidos p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
 #pedidos h2 {
