@@ -25,66 +25,95 @@
         <h2>Tabela de preços</h2>
 
         <div class="border">
-          <table>
-            <tr>
-              <th colspan="2"><span>Cafés</span></th>
-            </tr>
-            <tr>
-              <th colspan="1">Tamanho</th>
-              <th colspan="1">Preço</th>
-            </tr>
-            <tr>
-              <td>Pequeno</td>
-              <td>R$ 5,00</td>
-            </tr>
-            <tr>
-              <td>Médio</td>
-              <td>R$ 7,00</td>
-            </tr>
-            <tr>
-              <td>Grande</td>
-              <td>R$ 9,00</td>
-            </tr>
+          <div class="categoria">
+            <table>
+              <tr>
+                <th colspan="2"><span>Cafés</span></th>
+              </tr>
+              <tr>
+                <th>Tamanho</th>
+                <th>Preço</th>
+              </tr>
+              <tr>
+                <td>Pequeno</td>
+                <td>R$ 5,00</td>
+              </tr>
+              <tr>
+                <td>Médio</td>
+                <td>R$ 7,00</td>
+              </tr>
+              <tr>
+                <td>Grande</td>
+                <td>R$ 9,00</td>
+              </tr>
+            </table>
 
-            <tr>
-              <th colspan="2"><span>Chás</span></th>
-            </tr>
-            <tr>
-              <th colspan="1">Tamanho</th>
-              <th colspan="1">Preço</th>
-            </tr>
-            <tr>
-              <td>Pequeno</td>
-              <td>R$ 4,00</td>
-            </tr>
-            <tr>
-              <td>Médio</td>
-              <td>R$ 6,00</td>
-            </tr>
-            <tr>
-              <td>Grande</td>
-              <td>R$ 8,00</td>
-            </tr>
-            <tr>
-              <th colspan="2"><span>Sobremesas</span></th>
-            </tr>
-            <tr>
-              <th colspan="1">Tipo</th>
-              <th colspan="1">Preço</th>
-            </tr>
-            <tr>
-              <td>Bolos</td>
-              <td>R$ 12,00</td>
-            </tr>
-            <tr>
-              <td>Tortas</td>
-              <td>R$ 15,00</td>
-            </tr>
-            <tr>
-              <td>Sorvetes</td>
-              <td>R$ 10,00</td>
-            </tr>
-          </table>
+            <div class="imagens">
+              <img src="imagens/cafeP.png" alt="Café pequeno" />
+              <img src="imagens/cafeM.png" alt="Café médio" />
+              <img src="imagens/cafeG.png" alt="Café grande" />
+            </div>
+          </div>
+
+          <div class="categoria">
+            <table>
+              <tr>
+                <th colspan="2"><span>Chás</span></th>
+              </tr>
+              <tr>
+                <th>Tamanho</th>
+                <th>Preço</th>
+              </tr>
+              <tr>
+                <td>Pequeno</td>
+                <td>R$ 4,00</td>
+              </tr>
+              <tr>
+                <td>Médio</td>
+                <td>R$ 6,00</td>
+              </tr>
+              <tr>
+                <td>Grande</td>
+                <td>R$ 8,00</td>
+              </tr>
+            </table>
+
+            <div class="imagens">
+              <img src="imagens/chaP.png" alt="Chá pequeno" />
+              <img src="imagens/chaM.png" alt="Chá médio" />
+              <img src="imagens/chaG.png" alt="Chá grande" />
+            </div>
+          </div>
+
+          <div class="categoria">
+            <table>
+              <tr>
+                <th colspan="2"><span>Sobremesas</span></th>
+              </tr>
+              <tr>
+                <th>Tipo</th>
+                <th>Preço</th>
+              </tr>
+              <tr>
+                <td>Bolos</td>
+                <td>R$ 12,00</td>
+              </tr>
+              <tr>
+                <td>Tortas</td>
+                <td>R$ 15,00</td>
+              </tr>
+              <tr>
+                <td>Sorvetes</td>
+                <td>R$ 10,00</td>
+              </tr>
+            </table>
+
+            <div class="imagens">
+              <img src="imagens/cake.png" alt="Bolo" />
+              <img src="imagens/pie.png" alt="Torta" />
+              <img src="imagens/iceC.png" alt="Sorvete" />
+            </div>
+          </div>
         </div>
       </section>
       <section id="cafe">
@@ -116,27 +145,64 @@
       </section>
       <section id="sobremesas">
         <h2>Sobremesas</h2>
+
         <p>Oferecemos uma variedade de sobremesas, desde bolos até sorvetes.</p>
-        <ul>
-          <li>Bolos</li>
-          <ol>
-            <li>Bolo de Chocolate</li>
-            <li>Bolo de Cenoura</li>
-            <li>Bolo de Limão</li>
-          </ol>
-          <li>Tortas</li>
-          <ol>
-            <li>Torta de Maçã</li>
-            <li>Torta de Morango</li>
-            <li>Torta de Limão</li>
-          </ol>
-          <li>Sorvetes</li>
-          <ol>
-            <li>Sorvete de Chocolate</li>
-            <li>Sorvete de Baunilha</li>
-            <li>Sorvete de Morango</li>
-          </ol>
-        </ul>
+        <div class="categoria-sobremesa">
+          <h3>Bolos</h3>
+
+          <div class="lista-sobremesas">
+            <div class="item-sobremesa">
+              <p>Bolo de Chocolate</p>
+              <img src="imagens/boloCH.jpg" alt="Bolo de Chocolate" />
+            </div>
+            <div class="item-sobremesa">
+              <p>Bolo de Cenoura</p>
+              <img src="imagens/boloCE.jpg" alt="Bolo de Cenoura" />
+            </div>
+            <div class="item-sobremesa">
+              <p>Bolo de Limão</p>
+              <img src="imagens/boloL.webp" alt="Bolo de Limão" />
+            </div>
+          </div>
+        </div>
+
+        <div class="categoria-sobremesa">
+          <h3>Tortas</h3>
+
+          <div class="lista-sobremesas">
+            <div class="item-sobremesa">
+              <p>Torta de Maçã</p>
+              <img src="imagens/tortaMA.webp" alt="Torta de Maçã" />
+            </div>
+            <div class="item-sobremesa">
+              <p>Torta de Morango</p>
+              <img src="imagens/tortaMO.jpg" alt="Torta de Morango" />
+            </div>
+            <div class="item-sobremesa">
+              <p>Torta de Limão</p>
+              <img src="imagens/tortaL.webp" alt="Torta de Limão" />
+            </div>
+          </div>
+        </div>
+
+        <div class="categoria-sobremesa">
+          <h3>Sorvetes</h3>
+
+          <div class="lista-sobremesas">
+            <div class="item-sobremesa">
+              <p>Sorvete de Chocolate</p>
+              <img src="imagens/sorveteC.webp" alt="Sorvete de Chocolate" />
+            </div>
+            <div class="item-sobremesa">
+              <p>Sorvete de Baunilha</p>
+              <img src="imagens/sorveteB.webp" alt="Sorvete de Baunilha" />
+            </div>
+            <div class="item-sobremesa">
+              <p>Sorvete de Morango</p>
+              <img src="imagens/sorveteM.jpg" alt="Sorvete de Morango" />
+            </div>
+          </div>
+        </div>
       </section>
       <section id="pedidos">
         <h2>Fazer Pedidos</h2>

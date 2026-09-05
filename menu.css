@@ -26,17 +26,17 @@ header {
 }
 
 header h1 {
-    font-size: 60px;
-    border: 1px solid var(--secondary-color);
-    border-radius: 20px;
-    padding: 5px;
-    margin-bottom: 20px;
-    transition: 0.3s ease;
+  font-size: 60px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 20px;
+  padding: 5px;
+  margin-bottom: 20px;
+  transition: 0.3s ease;
 }
 
 header h1:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 header ul {
@@ -55,14 +55,16 @@ header ul a {
   font-size: 1.2rem;
   cursor: pointer;
   text-decoration: none;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
   border-radius: 20px;
 }
 
-header ul a:hover{
-    background-color: var(--secondary-color);
-    border-radius: 20px;
-    color: var(--primary-color);
+header ul a:hover {
+  background-color: var(--secondary-color);
+  border-radius: 20px;
+  color: var(--primary-color);
 }
 
 body {
@@ -74,27 +76,15 @@ main {
   background-color: var(--accent-color);
   display: flex;
   flex-direction: column;
-  padding: 0; 
+  padding: 0;
   border: 10px solid var(--primary-color);
 }
 
-main img {
-  width: 30%;
-  height: auto;
-}
-
-#tabela {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border: 5px solid var(--primary-color);
-  padding: 30px;
-}
 .border {
-    border: 5px solid var(--primary-color);
-    border-radius: 20px;
-    padding: 20px;
-    margin: 0 5%;
+  border: 5px solid var(--primary-color);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 0 5%;
 }
 
 #tabela h2 {
@@ -103,13 +93,14 @@ main img {
   background-color: var(--secondary-color);
   margin-top: 20px;
   margin-left: auto;
-  margin-right:auto;
+  margin-right: auto;
   width: fit-content;
   padding: 10px;
   border-radius: 20px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
   margin-bottom: 20px;
 }
+
 
 
 table th[colspan="2"] span {
@@ -121,22 +112,6 @@ table th[colspan="2"] span {
   background-color: var(--secondary-color);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-}
-
-table th[colspan="1"] {
-  padding: 10px;
-  border: 2px solid var(--primary-color);
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  font-size: 1.2rem;
-  text-align: center;
-  border-radius: 10px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-table th[colspan="1"]:hover {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
 }
 
 table td {
@@ -154,6 +129,40 @@ table td:hover {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   border-radius: 10px;
+}
+
+.categoria {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.categoria:last-child {
+  margin-bottom: 0;
+}
+
+.categoria table {
+  border-spacing: 5px;
+}
+
+.imagens {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.imagens img {
+  width: 30%;
+  height: 20%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  border: 5px solid var(--primary-color);
+}
+
+.imagens img:hover {
+  transform: scale(1.1);
 }
 
 #tabela p {
@@ -235,10 +244,11 @@ table td:hover {
   background-color: var(--accent-color);
   margin: auto;
   width: 100%;
+  text-align: center;
 }
 
-#sobremesas p{
-    text-align: center;
+#sobremesas p {
+  text-align: center;
 }
 
 #sobremesas h2 {
@@ -249,9 +259,80 @@ table td:hover {
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
-  padding: 10px;  
+  padding: 10px;
   border-radius: 20px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+}
+
+#sobremesas h3 {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease;
+}
+
+#sobremesas h3:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.categoria-sobremesa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lista-sobremesas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.item-sobremesa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.item-sobremesa img {
+    width: 100%;
+    max-width: 300px;
+    max-height: 200px;
+    object-fit: cover;
+    height: auto;
+    border-radius: 20%;
+    border: var(--primary-color) 5px solid;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.item-sobremesa:hover img {
+    transform: scale(1.1);
+}
+
+.item-sobremesa p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    background-color: var(--secondary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease;
+}
+
+.item-sobremesa p:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 footer {
@@ -263,7 +344,7 @@ footer {
   padding: 10px;
   background-color: var(--accent-color);
   box-sizing: border-box;
-  border: 10px solid var(--primary-color);     
+  border: 10px solid var(--primary-color);
 }
 
 #pedidos {
@@ -272,8 +353,8 @@ footer {
   width: 100%;
 }
 
-#pedidos p{
-    text-align: center;
+#pedidos p {
+  text-align: center;
 }
 
 #pedidos h2 {
@@ -284,19 +365,19 @@ footer {
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
-  padding: 10px;  
+  padding: 10px;
   box-sizing: border-box;
   border-radius: 20px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
 }
 
-#pedidos ul{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    list-style: none;
+#pedidos ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  list-style: none;
 }
 
 #pedidos li a {
@@ -310,12 +391,13 @@ footer {
   cursor: pointer;
   text-decoration: none;
   border: 2px solid var(--primary-color);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
-#pedidos li a:hover{
-    background-color: var(--accent-color);
-    border: 2px solid var(--primary-color);
-    color: var(--primary-color);
-
+#pedidos li a:hover {
+  background-color: var(--accent-color);
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
 }
