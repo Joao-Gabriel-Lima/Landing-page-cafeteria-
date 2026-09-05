@@ -14,6 +14,10 @@
   --background-color: #f5f5f5;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 header h1 {
   font-size: 40px;
 }
@@ -289,15 +293,83 @@ address li a:hover{
 
 }
 
+#menuH {
+  display: none;  
+}
+
+#voltar{
+  border: var(--accent-color) solid 2px;
+  border-radius: 100px;
+  height: 50px;
+  width: 50px;
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  bottom: 20px;
+  right: 20px;
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  justify-content: center;
+  align-items: center;
+}
+
+#voltar.visivel{
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+#voltar:active{
+  background-color: var(--accent-color);
+  border: var(--primary-color) solid 2px;
+  color: var(--primary-color);
+  transform: scale(1.1);
+}
+
 @media (max-width: 768px){
   header{
     grid-template-columns: 1fr;
     text-align: center;
   }
+
+  #menuH {
+    display: block;
+    background: none;
+    cursor: pointer;
+    color: var(--accent-color);
+    border: var(--secondary-color) solid 1px;
+    border-radius: 10px;
+    padding: 5px;
+    width:fit-content ;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: x-large;
+  }
+
+  #menuH:active{
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+  }
+  
   
   header h1{
     display: flex;
     justify-content: center;
+  }
+
+  header ul{
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  header ul.menu-ativo{
+    display: flex;
   }
 
   #botaoMenu{
