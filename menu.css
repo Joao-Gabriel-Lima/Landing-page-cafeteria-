@@ -495,13 +495,28 @@ footer {
     flex-direction: column;
     gap: 20px;
   }
+  
+.lista-sobremesas {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
 
-  .item-sobremesa img {
+.item-sobremesa {
+    margin: 3px;
+}
+
+.item-sobremesa p {
+    font-size: 1rem;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+.item-sobremesa img {
     width: 100%;
+    max-width: 110px;
     height: 100px;
-    max-width: 200px;
     object-fit: cover;
-  }
+}
 
   #cafe ul, #cha ul, #pedidos ul {
     flex-direction: column;
